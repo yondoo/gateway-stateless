@@ -4,6 +4,11 @@
     <base href="/" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src * data: blob: ws: wss:;
+        style-src * 'unsafe-inline'; 
+        script-src * 'unsafe-inline' 'unsafe-eval';
+        connect-src * ws: wss:;">
     <title>gateway</title>
     <meta name="description" content="Description for gateway">
     <meta name="google" content="notranslate">
